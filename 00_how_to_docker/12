@@ -1,0 +1,18 @@
+docker pull mysql
+docker run --detach --restart=on-failure --name=spawning-pool \
+--env "MYSQL_ROOT_PASSWORD=Kerrigan" \
+--env "MYSQL_DATABASE=zerglings" --volume hatchery:/var/lib/mysql mysql \
+--default-authentication-plugin=mysql_native_password
+docker exec -it spawning-pool bash
+
+#https://stackoverflow.com/questions/37599128/docker-how-do-you-disable-auto-restart-on-a-container
+#https://medium.com/@backslash112/start-a-remote-mysql-server-with-docker-quickly-9fdff22d23fd
+#https://severalnines.com/database-blog/mysql-docker-containers-understanding-basics
+#https://docs.docker.com/v17.09/engine/admin/start-containers-automatically/#https://docs.docker.com/engine/reference/run/
+#https://hub.docker.com/_/mysql
+
+#docker exec -it spawning-pool bash
+#check docker run -it  -v hatchery debian
+#https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose
+
+#/var/lib/mysql# ls -la

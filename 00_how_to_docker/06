@@ -1,0 +1,5 @@
+ docker run --detach --publish=5000:80 --name=overlord nginx
+
+#https://docs.docker.com/docker-for-mac/
+#--publish Publish a container’s port(s) to the host
+#--detach  to run the container in the background in a “detached” mode

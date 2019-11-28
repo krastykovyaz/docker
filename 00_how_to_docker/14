@@ -1,0 +1,11 @@
+docker pull wordpress
+docker network create spawning-pool
+#docker run -d --network=spawning-pool --env 'MYSQL_DATABASE=spawning-pool' --env 'WORDPRESS_DB_HOST=spawning-pool:3306' --env 'WORDPRESS_DB_USER=root' --env 'WORDPRESS_DB_PASSWORD=Kerrigan' --env 'WORDPRESS_DB_NAME=zerglings' --name lair -p 8080:80 wordpress
+
+docker run -d --name=liar -p=8080:80 --link="spawning-pool:mysql" wordpress
+#docker network disconnect bridge spawning-pool
+
+#docker network inspect bridge
+#https://docs.docker.com/engine/reference/run/
+#https://success.docker.com/article/multiple-docker-networks
+#https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose

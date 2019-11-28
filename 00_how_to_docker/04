@@ -1,0 +1,4 @@
+docker pull hello-world
+
+#https://docs.docker.com/engine/reference/commandline/pull/
+#At the same time u can simply launch: docker run hello-world

@@ -1,0 +1,5 @@
+#inside the Char
+docker service create --detach --network overmind --name orbital-command -e 'RABBITMQ_USERNAME=Rab' -e 'RABBITMQ_PASSWORD=root' rabbitmq
+
+#https://docs.docker.com/engine/reference/commandline/service_create/
+#https://hub.docker.com/r/frodenas/rabbitmq/

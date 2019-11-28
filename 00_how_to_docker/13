@@ -1,0 +1,6 @@
+
+#docker exec -it spawning-pool bash
+docker exec spawning-pool env
+
+
+#https://stackoverflow.com/questions/34051747/get-environment-variable-from-docker-container

@@ -1,0 +1,10 @@
+#docker pull debian
+#docker run -it debian
+#docker exec -it debian bash
+apt-get update
+apt-get install gcc
+apt-get install git
+
+#https://stackoverflow.com/questions/30172605/how-do-i-get-into-a-docker-containers-shell
+#https://stackoverflow.com/questions/29732990/installing-a-gcc-compiler-onto-a-docker-container
+#https://docs.docker.com/engine/reference/commandline/exec/

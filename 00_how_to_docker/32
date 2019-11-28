@@ -1,0 +1,4 @@
+docker rm -f $(docker ps -a -q)
+
+#https://stackoverflow.com/questions/38060279/deleting-all-docker-images-and-containers
+#https://docs.docker.com/engine/reference/commandline/rm/

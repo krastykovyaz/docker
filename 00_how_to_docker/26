@@ -1,0 +1,6 @@
+#inside the Char
+docker service create --replicas 2 --network overmind --name engineering-bay -e 'OC_USERNAME=lnoisome' -e 'OC_PASSWD=root' 42school/engineering-bay
+
+#docker service ls
+#https://www.youtube.com/watch?v=bU2NNFJ-UXA
+#https://hub.docker.com/r/42school/engineering-bay/

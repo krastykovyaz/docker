@@ -1,0 +1,4 @@
+#inside the Char
+docker service create --replicas 2 --network overmind --name marines -e 'OC_USERNAME=lnoisome' -e 'OC_PASSWD=root' 42school/marine-squaddoc
+
+#https://hub.docker.com/r/42school/marine-squad/

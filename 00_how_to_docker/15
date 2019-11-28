@@ -1,0 +1,8 @@
+docker search phpmyadmin
+docker pull phpmyadmin/phpmyadmin
+#docker network create spawning-pool
+#docker run --detach --name roach-warden --network wordpress --env 'MYSQL_USER=root' --env 'PMA_HOST=dphost' --env 'MYSQL_ROOT_PASSWORD=Kerrigan' -p 8081:80 phpmyadmin/phpmyadmin
+
+docker run --name roach-warden -d -p 8081:80 --link spawning-pool:db -e MYSQL_ROOT_PASSWORD=password phpmyadmin/phpmyadmin
+#https://hub.docker.com/r/phpmyadmin/phpmyadmin/
+#https://hub.docker.com/r/phpmyadmin/phpmyadmin/

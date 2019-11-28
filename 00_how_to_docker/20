@@ -1,0 +1,4 @@
+docker swarm init --advertise-addr <host_address>
+
+#docker swarm init --advertise-addr <check docker machine ip>
+#https://www.techrepublic.com/article/how-to-create-a-docker-swarm/

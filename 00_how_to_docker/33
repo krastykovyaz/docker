@@ -1,0 +1,4 @@
+docker rmi $(docker images -a)
+
+#https://stackoverflow.com/questions/44785585/how-to-delete-all-docker-local-docker-images
+#https://docs.docker.com/engine/reference/commandline/images/

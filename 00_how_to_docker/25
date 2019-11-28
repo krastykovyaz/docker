@@ -1,0 +1,4 @@
+#inside Char
+docker service ls
+
+#https://docs.docker.com/engine/reference/commandline/service_ls/

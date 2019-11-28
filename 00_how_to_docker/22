@@ -1,0 +1,14 @@
+docker-machine ls
+docker-machine ip Char
+docker-machine ssh Char
+docker swarm init --advertise-addr <ip>
+#inside manager
+docker swarm join-token woker
+#copy to worker
+#docker swarm join --token SWMTKN-1.........
+#backto manager and check
+docker node ls
+docker network ls
+
+#https://www.youtube.com/watch?v=bU2NNFJ-UXA
+#inside the leader: docker node ls

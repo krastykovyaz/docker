@@ -1,0 +1,5 @@
+#inside the Char
+
+docker service rm $(docker service ls -q)
+
+#https://stackoverflow.com/questions/49538037/how-to-remove-all-services-in-docker-swarm

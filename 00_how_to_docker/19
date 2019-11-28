@@ -1,0 +1,31 @@
+docker run -itd --name Abathur --mount 'type=volume,dst=/home:/root' \
+--publish 3000:3000 python:2-slim
+docker exec -it Abathur bash
+#inside
+pip install Flask
+apt-get update
+apt-get install vim -y
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+	return '<h>Hello World</h>'
+
+if __name__ == '__main__':
+	app.run(debug=True,host='0.0.0.0')
+
+python app.py
+flask run --host=0.0.0.0 --port 3000
+
+
+#--env=FLASK_APP\
+#https://docs.docker.com/storage/volumes/
+#https://docs.docker.com/storage/bind-mounts/
+#https://hub.docker.com/_/python python:<version>-slim
+#https://puppet.com/docs/pipelines-for-apps/team/docker-python.html
+#https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
+#https://flask-russian-docs.readthedocs.io/ru/latest/quickstart.html
